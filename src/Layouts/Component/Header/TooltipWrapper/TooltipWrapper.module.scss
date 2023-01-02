@@ -1,0 +1,17 @@
+.l-header {
+    &__tooltipWrapper {
+        width: 100%;
+        background: rgb(255, 255, 255);
+        box-shadow: rgb(0 0 0 / 12%) 0px 2px 12px;
+        border-radius: 8px;
+        padding-top: 8px;
+        h4 {
+            height: 30px;
+            padding: 5px 12px;
+            font-size: 1.4rem;
+            line-height: 20px;
+            font-weight: 600;
+            color: rgba(22, 24, 35, 0.5);
+        }
+    }
+}
