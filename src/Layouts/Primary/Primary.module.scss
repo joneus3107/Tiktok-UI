@@ -1,0 +1,15 @@
+.l-primary {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__sidebar {
+        max-width: 356px;
+        width: 30.95%;
+        background-color: lightgray;
+    }
+    &__content {
+        max-width: 629px;
+        width: 59.9%;
+    }
+}

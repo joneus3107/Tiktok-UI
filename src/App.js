@@ -7,16 +7,6 @@ import { DefaultLayout } from '~/Layouts';
 function App() {
     return (
         <div className="App">
-            <nav>
-                <Link to="/">HomePage</Link>
-                <br />
-                <Link to="/following">Following</Link>
-                <br />
-                <Link to="/upload">Upload</Link>
-                <br />
-                <Link to="/search">Search</Link>
-                <br />
-            </nav>
             <Routes>
                 {publicRoutes.map((route, index) => {
                     const Page = route.element;
