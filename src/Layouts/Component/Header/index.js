@@ -1,6 +1,8 @@
 import { useState, useEffect, useRef } from 'react';
 import classNames from 'classnames/bind';
 import Tippy from '@tippyjs/react/headless';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 
 import styles from '~/Layouts/Component/Header/Header.module.scss';
 import images from '~/assets/images';
@@ -13,6 +15,7 @@ const testData = [
         avatar: 'https://p16-sign-sg.tiktokcdn.com/aweme/100x100/tiktok-obj/1663032433476609.jpeg?x-expires=1672844400&x-signature=zSHh3ToKDIAzgPO63uJud7EuAXI%3D',
         userName: 'tranthanh123',
         niceName: 'Trấn Thành',
+        blueStick: true,
     },
     {
         avatar: 'https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/07d7f3e222765515c2787c1d093bcdaa~c5_100x100.jpeg?x-expires=1672844400&x-signature=sbfYFATqfsOJMD6JYlQa6xH2srw%3D',
@@ -32,10 +35,11 @@ function Header() {
     const [searchResult, setSearchResult] = useState([]);
 
     useEffect(() => {
-        console.log(searchResult);
         if (searchInput.length > 0) {
+            setCheckClear(true);
             setSearchResult(testData);
         } else {
+            setCheckClear(false);
             setSearchResult([]);
         }
     }, [searchInput]);
@@ -90,7 +94,18 @@ function Header() {
                                                     'l-header__searchAccountInfo',
                                                 )}
                                             >
-                                                <h5>{account.userName}</h5>
+                                                <h5>
+                                                    {account.userName}
+                                                    {account.blueStick && (
+                                                        <span>
+                                                            <FontAwesomeIcon
+                                                                icon={
+                                                                    faCheckCircle
+                                                                }
+                                                            />
+                                                        </span>
+                                                    )}
+                                                </h5>
                                                 <p>{account.niceName}</p>
                                             </div>
                                         </div>
