@@ -1,0 +1,35 @@
+.c-btn01 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--primary);
+    background-color: var(--primary);
+    color: #fff;
+    font-size: 1.8rem;
+    // font-family: 'SofiaPro';
+    font-family: $mainFont;
+    font-weight: 600;
+    line-height: 1;
+    padding: 8px 4.5px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 8px;
+    &:hover {
+        background: linear-gradient(
+                0deg,
+                rgba(0, 0, 0, 0.06),
+                rgba(0, 0, 0, 0.06)
+            ),
+            #fe2c55;
+    }
+    &--white-bg {
+        background: #fff;
+        color: #161823;
+        border-color: #1618231f;
+        border-radius: 2px;
+        padding: 8px 18px;
+        &:hover {
+            background-color: #16182308;
+        }
+    }
+}

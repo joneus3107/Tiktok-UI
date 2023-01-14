@@ -1,0 +1,40 @@
+.c-themeBtn {
+    --normal: #1618231f;
+    --active: var(--primary);
+    background-color: transparent;
+    border: none;
+    outline: none;
+    &__box {
+        width: 44px;
+        height: 24px;
+        border-radius: 100px;
+        position: relative;
+        background-color: var(--normal);
+        transition: 0.4s all ease-in-out;
+    }
+    &__circle {
+        --size: 20px;
+        width: var(--size);
+        height: var(--size);
+        background-color: #fff;
+        border-radius: 100%;
+        position: absolute;
+        top: 50%;
+        left: 2px;
+        transform: translate(0, -50%);
+        border: 1px solid var(--normal);
+        box-shadow: #00000026 0px 1px 2px;
+        transition: 0.3s all ease-in-out;
+    }
+    &.is-active {
+        .c-themeBtn {
+            &__box {
+                background-color: var(--primary);
+            }
+            &__circle {
+                left: 42px;
+                transform: translate(-100%, -50%);
+            }
+        }
+    }
+}
