@@ -3,8 +3,12 @@ import Styles from './TooltipWrapper.module.scss';
 
 const cx = classNames.bind(Styles);
 
-function TooltipWrapper({ children }) {
-    return <div className={cx('l-header__tooltipWrapper')}>{children}</div>;
+function TooltipWrapper({ children, classNames }) {
+    return (
+        <div className={cx('l-header__tooltipWrapper', classNames)}>
+            {children}
+        </div>
+    );
 }
 
 export default TooltipWrapper;

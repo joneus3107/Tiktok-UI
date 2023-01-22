@@ -131,6 +131,9 @@
         width: 20px;
         height: 20px;
     }
+    &__moreIco {
+        height: 46px;
+    }
     &__more {
         display: flex;
         cursor: pointer;
@@ -140,26 +143,6 @@
         align-items: center;
     }
     &__cornerMenu {
-        svg {
-            width: 20px;
-            height: 20px;
-            margin-right: 8px;
-            vertical-align: middle;
-        }
-        li {
-            display: flex;
-            padding: 10px 8px 10px 16px;
-            div,
-            a {
-                display: flex;
-                align-items: center;
-                cursor: pointer;
-                font-weight: 600;
-                flex: 1;
-            }
-            &:hover {
-                background-color: #16182308;
-            }
-        }
+        padding: 8px 0;
     }
 }
