@@ -7,10 +7,10 @@ import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 
 import styles from '~/Layouts/Component/Header/Header.module.scss';
 import images from '~/assets/images';
-import SearchIco from '~/Layouts/Component/Header/SearchIco';
-import TooltipWrapper from '~/Layouts/Component/Header/TooltipWrapper';
+import SearchIco from '~/Component/Header/SearchIco';
+import TooltipWrapper from '~/Component/Header/TooltipWrapper';
 import HeaderSVG from './HeaderSVG';
-import ThemeBtn from '~/Layouts/Component/ThemeBtn';
+import ThemeBtn from '~/Component/ThemeBtn';
 
 const cx = classNames.bind(styles);
 const testData = [

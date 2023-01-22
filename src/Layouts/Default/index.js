@@ -1,4 +1,4 @@
-import Header from '~/Layouts/Component/Header';
+import Header from '~/Component/Header';
 
 function Default({ children }) {
     return (

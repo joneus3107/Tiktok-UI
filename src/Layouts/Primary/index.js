@@ -1,8 +1,8 @@
 import { Fragment } from 'react';
 import classNames from 'classnames/bind';
 import Style from './Primary.module.scss';
-import Header from '~/Layouts/Component/Header';
-import Sidebar from '~/Layouts/Component/Sidebar';
+import Header from '~/Component/Header';
+import Sidebar from '~/Component/Sidebar';
 
 const cx = classNames.bind(Style);
 
