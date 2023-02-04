@@ -24,52 +24,52 @@ Bước 4: Build source code ra dạng đã hoàn thiện và tối ưu
 
 ###### Initialize project using Create React App
 
-\_ Khởi tạo dự án bằng lệnh Create React App
+\_ Khởi tạo dự án bằng lệnh Create React App.
 
 ###### Cài đặt babel-plugin-module-resolver
 
-_ Cài đặt plugin babel-plugin-module-resolver
-_ Dùng để cải thiện độ dài của đường dẫn khi import
+_ Cài đặt plugin babel-plugin-module-resolver.<br>
+_ Dùng để cải thiện độ dài của đường dẫn khi import.<br>
 
 ###### Cài đặt và cấu hình Prettier
 
-_ Cấu hình extention Prettier
-_ Có thể tự động format lại code mỗi khi lưu
-\_ Yêu cầu cài đặt Prettier extention ở VScode để có thể dùng
+_ Cấu hình extention Prettier.<br>
+_ Có thể tự động format lại code mỗi khi lưu.<br>
+\_ Yêu cầu cài đặt Prettier extention ở VScode để có thể dùng.
 
 ##### 01/01/2023
 
 ###### Cấu hình sử dụng CSS/SASS
 
-_ Cài thêm thư viện normalize.css dùng để reset lại các thuộc tính CSS
-_ Cài thêm thư viện sass để dự án có thể dùng được scss/sass
-_ Tạo ra component GlobalStyle cho phép template sử dụng các style cục bộ
+_ Cài thêm thư viện normalize.css dùng để reset lại các thuộc tính CSS.<br>
+_ Cài thêm thư viện sass để dự án có thể dùng được scss/sass.<br>
+_ Tạo ra component GlobalStyle cho phép template sử dụng các style cục bộ.<br>
 _ Bắt đầu set up những CSS cơ bản của template như font-family,...
 
 ###### Bổ sung cấu hình sử dụng CSS/SASS
 
-\_ Bổ sung các CSS cục bộ còn thiếu
+\_ Bổ sung các CSS cục bộ còn thiếu.<br>
 
 ###### Cấu hình Router/Layout cho dự án
 
-_ Cài đặt react-router-dom cho phép template sử dụng component Link để điều hướng website
+_ Cài đặt react-router-dom cho phép template sử dụng component Link để điều hướng website.<br>
 _ Tạo sẵn các page sẽ được code chi tiết trong tương lai
 
 ##### 02/01/2023
 
 ###### Dựng khung Layout mặc định
 
-_ Bổ sung cách dùng className đặc biệt với thư viện classNamesJs
+_ Bổ sung cách dùng className đặc biệt với thư viện classNamesJs.<br>
 _ Xây dựng khung sườn cho các component quan trọng sử dụng nhiều trong tương lai
 
 ###### Xây dựng UI phần Header #1
 
-_ Cài đặt thư viện FontAwesome
-_ Xây dựng thô hình dáng ban đầu cho header
+_ Cài đặt thư viện FontAwesome.<br>
+_ Xây dựng thô hình dáng ban đầu cho header.<br>
 \_ Chuẩn bị một vài icon cần sử dụng
 
 ###### Xây dựng UI phần Header #2
 
-_ Cài đặt thư viện Tippy
-_ làm chi tiết thanh search bar
+_ Cài đặt thư viện Tippy.<br>
+_ làm chi tiết thanh search bar.<br>
 \_ Fake popup khi nhập dữ liệu tìm kiếm
