@@ -8,15 +8,15 @@ Bước 1: Clone dự án về môi trường local
 
 Bước 2: cài đặt các thư viện cần thiết cho template
 
-### npm i
+### `npm i`
 
 Bước 3: Chạy dự án ở chế độ develop
 
-### npm start
+### `npm start`
 
 Bước 4: Build source code ra dạng đã hoàn thiện và tối ưu
 
-### npm run build
+### `npm run build`
 
 ## Các bản cập nhật
 
