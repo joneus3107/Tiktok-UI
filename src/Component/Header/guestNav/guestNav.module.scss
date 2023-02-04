@@ -1,0 +1,17 @@
+.l-header {
+    &__moreIco {
+        width: 20px;
+        height: 46px;
+    }
+    &__navMenu {
+        display: flex;
+        align-items: center;
+    }
+    &__more {
+        display: flex;
+        cursor: pointer;
+    }
+    &__cornerMenu {
+        padding: 8px 0;
+    }
+}

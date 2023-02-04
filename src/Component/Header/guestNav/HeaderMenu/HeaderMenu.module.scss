@@ -1,0 +1,54 @@
+.c-headerMenu {
+    min-width: 223px;
+    svg {
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+        vertical-align: middle;
+    }
+    li {
+        display: flex;
+        padding: 10px 8px 10px 16px;
+        div,
+        a {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            font-weight: 600;
+            flex: 1;
+        }
+        &:hover {
+            background-color: #16182308;
+        }
+    }
+    &__title {
+        --titleHeight: 44px;
+        text-align: center;
+        font-size: 1.6rem;
+        position: relative;
+        height: var(--titleHeight);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent !important;
+        cursor: default !important;
+        button {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: var(--titleHeight);
+            height: var(--titleHeight);
+            border: none;
+            outline: none;
+            background-color: transparent;
+            cursor: pointer;
+            z-index: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            svg {
+                margin: 0;
+            }
+        }
+    }
+}

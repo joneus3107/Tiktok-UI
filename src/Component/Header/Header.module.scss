@@ -126,23 +126,8 @@
     &__plusIco {
         margin-right: 8px;
     }
-    &__plusIco,
-    &__moreIco {
+    &__plusIco {
         width: 20px;
         height: 20px;
-    }
-    &__moreIco {
-        height: 46px;
-    }
-    &__more {
-        display: flex;
-        cursor: pointer;
-    }
-    &__navMenu {
-        display: flex;
-        align-items: center;
-    }
-    &__cornerMenu {
-        padding: 8px 0;
     }
 }
