@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# Tiktok UI - ReactJS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Repository này dùng để clone lại UI của Tiktok, với mục đích luyện tập trong quá trình học và làm quen với ReactJs. Nếu bạn có bất cứ ý kiến đóng góp nào để cải thiện repository này tôi sẽ rất vui lòng lắng nghe và học hỏi. Xin cảm ơn!
 
-## Available Scripts
+## Cách sử dụng
 
-In the project directory, you can run:
+Bước 1: Clone dự án về môi trường local
 
-### `npm start`
+Bước 2: cài đặt các thư viện cần thiết cho template
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### npm i
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Bước 3: Chạy dự án ở chế độ develop
 
-### `npm test`
+### npm start
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Bước 4: Build source code ra dạng đã hoàn thiện và tối ưu
 
-### `npm run build`
+### npm run build
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Các bản cập nhật
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+##### 31/12/2022
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+###### Initialize project using Create React App
 
-### `npm run eject`
+\_ Khởi tạo dự án bằng lệnh Create React App
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+###### Cài đặt babel-plugin-module-resolver
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+_ Cài đặt plugin babel-plugin-module-resolver
+_ Dùng để cải thiện độ dài của đường dẫn khi import
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+###### Cài đặt và cấu hình Prettier
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+_ Cấu hình extention Prettier
+_ Có thể tự động format lại code mỗi khi lưu
+\_ Yêu cầu cài đặt Prettier extention ở VScode để có thể dùng
 
-## Learn More
+##### 01/01/2023
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+###### Cấu hình sử dụng CSS/SASS
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+_ Cài thêm thư viện normalize.css dùng để reset lại các thuộc tính CSS
+_ Cài thêm thư viện sass để dự án có thể dùng được scss/sass
+_ Tạo ra component GlobalStyle cho phép template sử dụng các style cục bộ
+_ Bắt đầu set up những CSS cơ bản của template như font-family,...
 
-### Code Splitting
+###### Bổ sung cấu hình sử dụng CSS/SASS
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+\_ Bổ sung các CSS cục bộ còn thiếu
 
-### Analyzing the Bundle Size
+###### Cấu hình Router/Layout cho dự án
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+_ Cài đặt react-router-dom cho phép template sử dụng component Link để điều hướng website
+_ Tạo sẵn các page sẽ được code chi tiết trong tương lai
 
-### Making a Progressive Web App
+##### 02/01/2023
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+###### Dựng khung Layout mặc định
 
-### Advanced Configuration
+_ Bổ sung cách dùng className đặc biệt với thư viện classNamesJs
+_ Xây dựng khung sườn cho các component quan trọng sử dụng nhiều trong tương lai
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+###### Xây dựng UI phần Header #1
 
-### Deployment
+_ Cài đặt thư viện FontAwesome
+_ Xây dựng thô hình dáng ban đầu cho header
+\_ Chuẩn bị một vài icon cần sử dụng
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+###### Xây dựng UI phần Header #2
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+_ Cài đặt thư viện Tippy
+_ làm chi tiết thanh search bar
+\_ Fake popup khi nhập dữ liệu tìm kiếm
