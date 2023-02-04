@@ -1,6 +1,7 @@
 # Tiktok UI - ReactJS
 
-Repository này dùng để clone lại UI của Tiktok, với mục đích luyện tập trong quá trình học và làm quen với ReactJs. Nếu bạn có bất cứ ý kiến đóng góp nào để cải thiện repository này tôi sẽ rất vui lòng lắng nghe và học hỏi. Xin cảm ơn!
+Repository này dùng để clone lại UI của Tiktok, với mục đích luyện tập trong quá trình học và làm quen với ReactJs. Nếu bạn có bất cứ ý kiến đóng góp nào để cải thiện repository này tôi sẽ rất vui lòng lắng nghe và học hỏi.<br>
+Xin cảm ơn!
 
 ## Cách sử dụng
 
