@@ -5,7 +5,7 @@ import styles from './guestNav.module.scss';
 
 const cx = classNames.bind(styles);
 
-function GuestNav() {
+function GuestNav(props) {
     return (
         <div className={cx('l-header__navMenu')}>
             <button className={cx('c-btn01', 'c-btn01--white-bg')}>
@@ -27,7 +27,9 @@ function GuestNav() {
                 </svg>
                 Tải lên
             </button>
-            <button className={cx('c-btn01')}>Đăng nhập</button>
+            <button className={cx('c-btn01')} onClick={props.logInAction}>
+                Đăng nhập
+            </button>
             <span className={cx('l-header__more')}>
                 <HeaderMenu classNames={cx('l-header__cornerMenu')}>
                     <svg

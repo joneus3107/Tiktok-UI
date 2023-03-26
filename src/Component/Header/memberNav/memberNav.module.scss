@@ -1,0 +1,17 @@
+.l-header {
+    &__navMenu {
+        display: flex;
+        // align-items: center;
+    }
+    &__navIcon {
+        display: flex;
+        align-items: center;
+        padding: 0 5px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        &Msg {
+            font-size: 2.6rem;
+        }
+    }
+}

@@ -90,7 +90,6 @@ function HeaderMenu({ children, classNames }) {
 
     return (
         <Tippy
-            visible
             interactive
             delay={[0, 800]}
             placement="bottom-end"

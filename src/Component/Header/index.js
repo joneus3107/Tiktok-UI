@@ -9,8 +9,8 @@ import images from '~/assets/images';
 import SearchIco from '~/Component/Header/SearchIco';
 import TooltipWrapper from '~/Component/Header/TooltipWrapper';
 import HeaderSVG from '~/Component/Header/HeaderSVG';
-import HeaderMenu from '~/Component/Header/guestNav/HeaderMenu';
 import GuestNav from './guestNav';
+import MemberNav from './memberNav';
 
 const cx = classNames.bind(styles);
 const testData = [
@@ -36,6 +36,7 @@ function Header() {
     const [searchInput, setSearchInput] = useState('');
     const [checkClear, setCheckClear] = useState(false);
     const [searchResult, setSearchResult] = useState([]);
+    const [member, setMember] = useState(false);
 
     useEffect(() => {
         if (searchInput.length > 0) {
@@ -48,6 +49,11 @@ function Header() {
     }, [searchInput]);
 
     const clearRef = useRef();
+
+    // eslint-disable-next-line
+    const logInAction = () => {
+        setMember(!member);
+    };
 
     const handleChangeSearch = (e) => {
         setSearchInput(e.target.value);
@@ -149,7 +155,11 @@ function Header() {
                         </div>
                     </Tippy>
                 </div>
-                <GuestNav />
+                {member ? (
+                    <MemberNav />
+                ) : (
+                    <GuestNav logInAction={logInAction} />
+                )}
             </div>
             <HeaderSVG />
         </header>
