@@ -1,3 +1,5 @@
+import HeaderMenu from '~/Component/Header/guestNav/HeaderMenu';
+
 import classNames from 'classnames/bind';
 import { Link } from 'react-router-dom';
 
@@ -41,6 +43,16 @@ function MemberNav() {
                     <use xlinkHref="#notification_ico"></use>
                 </svg>
             </button>
+            <HeaderMenu>
+                <div className={cx('l-header__memAvt')}>
+                    <img
+                        src="https://yt3.googleusercontent.com/ytc/AL5GRJWaaLS7HptfDgsNtBnudaap13VrwHKxWsY9fWpOew=s900-c-k-c0x00ffffff-no-rj"
+                        alt="member_avatar"
+                        width={32}
+                        className="c-fit"
+                    />
+                </div>
+            </HeaderMenu>
         </section>
     );
 }
