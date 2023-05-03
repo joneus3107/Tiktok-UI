@@ -3,7 +3,13 @@ import { Link } from 'react-router-dom';
 import Tippy from '@tippyjs/react/headless';
 import classNames from 'classnames/bind';
 
-import { IcoLang, IcoHelp, IcoTheme, IcoBack } from '~/Component/IconsList';
+import {
+    IcoLang,
+    IcoHelp,
+    IcoTheme,
+    IcoBack,
+    IcoShortcut,
+} from '~/Component/IconsList';
 
 import ThemeBtn from '~/Component/ThemeBtn';
 // import HeaderSVG from '~/Component/Header/HeaderSVG';
@@ -20,7 +26,7 @@ const MENU_DATA = [
                 icon: {
                     name: '#language_ico',
                     alt: 'language',
-                    fallback: IcoLang,
+                    fallback: <IcoLang />,
                 },
                 children: {
                     title: 'Ngôn ngữ',
@@ -54,7 +60,7 @@ const MENU_DATA = [
                 icon: {
                     name: '#help_ico',
                     alt: 'help',
-                    fallback: IcoHelp,
+                    fallback: <IcoHelp />,
                 },
                 to: '/',
             },
@@ -63,6 +69,7 @@ const MENU_DATA = [
                 icon: {
                     name: '#shortcuts_ico',
                     alt: 'shortcut',
+                    fallback: <IcoShortcut />,
                 },
                 to: false,
             },
@@ -71,7 +78,7 @@ const MENU_DATA = [
                 icon: {
                     name: '#theme_ico',
                     alt: 'theme',
-                    fallback: IcoTheme,
+                    fallback: <IcoTheme />,
                 },
                 button: true,
             },

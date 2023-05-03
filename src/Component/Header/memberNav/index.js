@@ -4,6 +4,8 @@ import classNames from 'classnames/bind';
 import { Link } from 'react-router-dom';
 
 import styles from './memberNav.module.scss';
+import { IcoMsg, IcoNotice } from '~/Component/IconsList';
+import Image from '~/Component/Image';
 
 const cx = classNames.bind(styles);
 
@@ -34,18 +36,14 @@ function MemberNav() {
                 </svg>
             </Link> */}
             <Link className={cx('l-header__navIcon', 'l-header__navIconMsg')}>
-                <svg alt="effect" width={26} height={26}>
-                    <use xlinkHref="#message_ico"></use>
-                </svg>
+                <IcoMsg />
             </Link>
             <button className={cx('l-header__navIcon')}>
-                <svg alt="effect" width={32} height={32}>
-                    <use xlinkHref="#notification_ico"></use>
-                </svg>
+                <IcoNotice width={32} height={32} />
             </button>
             <HeaderMenu>
                 <div className={cx('l-header__memAvt')}>
-                    <img
+                    <Image
                         src="https://yt3.googleusercontent.com/ytc/AL5GRJWaaLS7HptfDgsNtBnudaap13VrwHKxWsY9fWpOew=s900-c-k-c0x00ffffff-no-rj"
                         alt="member_avatar"
                         width={32}
