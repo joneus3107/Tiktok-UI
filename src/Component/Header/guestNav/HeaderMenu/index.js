@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import Tippy from '@tippyjs/react/headless';
 import classNames from 'classnames/bind';
 
+import { IcoLang, IcoHelp, IcoTheme, IcoBack } from '~/Component/IconsList';
+
 import ThemeBtn from '~/Component/ThemeBtn';
 // import HeaderSVG from '~/Component/Header/HeaderSVG';
 import TooltipWrapper from '~/Component/Header/TooltipWrapper';
@@ -18,6 +20,7 @@ const MENU_DATA = [
                 icon: {
                     name: '#language_ico',
                     alt: 'language',
+                    fallback: IcoLang,
                 },
                 children: {
                     title: 'Ngôn ngữ',
@@ -51,6 +54,7 @@ const MENU_DATA = [
                 icon: {
                     name: '#help_ico',
                     alt: 'help',
+                    fallback: IcoHelp,
                 },
                 to: '/',
             },
@@ -67,6 +71,7 @@ const MENU_DATA = [
                 icon: {
                     name: '#theme_ico',
                     alt: 'theme',
+                    fallback: IcoTheme,
                 },
                 button: true,
             },
@@ -102,9 +107,7 @@ function HeaderMenu({ children, classNames }) {
                                     <h3>
                                         {display[display.length - 1].title}
                                         <button onClick={handleBack}>
-                                            <svg alt="back">
-                                                <use xlinkHref="#back_ico"></use>
-                                            </svg>
+                                            <IcoBack />
                                         </button>
                                     </h3>
                                 </li>
@@ -135,13 +138,20 @@ function HeaderMenu({ children, classNames }) {
                                         <li key={index}>
                                             <WrapBox>
                                                 {data.icon ? (
-                                                    <svg alt={data.icon.alt}>
-                                                        <use
-                                                            xlinkHref={
-                                                                data.icon.name
-                                                            }
-                                                        ></use>
-                                                    </svg>
+                                                    data.icon.fallback ? (
+                                                        data.icon.fallback
+                                                    ) : (
+                                                        <svg
+                                                            alt={data.icon.alt}
+                                                        >
+                                                            <use
+                                                                xlinkHref={
+                                                                    data.icon
+                                                                        .name
+                                                                }
+                                                            ></use>
+                                                        </svg>
+                                                    )
                                                 ) : (
                                                     ''
                                                 )}
